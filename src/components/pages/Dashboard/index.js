@@ -8,10 +8,10 @@ const Dashboard =() => {
     return (
       <>
         <Row gutter={[32,32]}>
-            <Col span={12}>
+            <Col span={15}>
                 <CalorieTracker/>
             </Col>
-            <Col span={12}>
+            <Col span={9}>
                 <Macronutrients/>
             </Col>
             <Col span={24}>

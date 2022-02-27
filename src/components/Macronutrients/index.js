@@ -15,21 +15,6 @@ const macros = [
         value:30,
         color:""
     },
-    // {
-    //     name:"Protein",
-    //     value:30,
-    //     color:""
-    // },
-    // {
-    //     name:"Carbs",
-    //     value:30,
-    //     color:""
-    // },
-    // {
-    //     name:"Fats",
-    //     value:30,
-    //     color:""
-    // },
 ]
 
 const macroProgress = macros.map(macro => {
@@ -46,9 +31,7 @@ const Macronutrients = () =>{
         <Card title="Macronutrients">
         {/* <Space direction="vertical"> */}
             <div style={{ width: '100%' }}>
-                
-                    {macroProgress}
-                
+                {macroProgress}
             </div>
             {/* </Space> */}
         </Card>

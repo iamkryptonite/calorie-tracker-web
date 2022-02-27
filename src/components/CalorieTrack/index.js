@@ -6,12 +6,12 @@ const CalorieTracker = () =>{
     const [percent,setPercent] = useState(100*cal/totalCal)
     return(
         <Card title="Calorie Tracker">
-            <Card.Grid hoverable={false} style={{width:'100%',textAlign:'center'}}>
+            {/* <Card.Grid hoverable={false} style={{width:'100%',textAlign:'center'}}> */}
             <Progress type="circle" percent={percent} format={percent => `${cal} Cals`} 
                 // strokeWidth={10}
                 width={200}
             />
-            </Card.Grid>
+            {/* </Card.Grid> */}
         </Card>
     )
 }

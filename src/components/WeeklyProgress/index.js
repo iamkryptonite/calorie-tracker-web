@@ -8,6 +8,7 @@ import {
     Title,
     Tooltip,
     Legend,
+    Filler,
   } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 
@@ -18,7 +19,8 @@ ChartJS.register(
     LineElement,
     Title,
     Tooltip,
-    Legend
+    Legend,
+    Filler
   );
 
   export const options = {
@@ -33,6 +35,11 @@ ChartJS.register(
             text: 'Chart.js Line Chart',
       },
     },
+    elements: {
+      line: {
+        fill: true
+      }
+    }
   };
 
   const labels = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -43,9 +50,10 @@ ChartJS.register(
       {
         label: 'Dataset 1',
         data: [12, 13, 14, 23,10,40,30],
-        borderColor: '#B4CFB0',
-        backgroundColor: '#B4CFB0',
-        fill: 'start'
+        borderColor: '#FF7878',
+        backgroundColor: 'rgba(255, 120, 120,0.6)',
+        fill: true,
+        tension:0.1
       },
     ],
   };
@@ -53,7 +61,7 @@ ChartJS.register(
 const WeeklyProgress = () =>{
     return(
         <Card title="Weekly Progress">
-            <Line options={options} data={data} />
+          <Line options={options} data={data} />
         </Card>
     )
 }

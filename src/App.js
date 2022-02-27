@@ -39,7 +39,7 @@ function App() {
       </Sider>
       <Layout className="site-layout" style={{ marginLeft: 200 }}>
         <Content style={{ margin: '32px 32px',justifyContent:'center',alignContent:'center',alignItems:'center' }}>
-          <div className="site-layout-background" style={{ padding: 24, minHeight: 360, maxWidth:1000,justifyContent:'center',alignContent:'center',alignItems:'center' }}>
+          <div className="site-layout-background" style={{ padding: 24, minHeight: 360, maxWidth:1000,margin:'auto' }}>
             <PageRouter/>
           </div>
         </Content>
