@@ -1,4 +1,4 @@
-import { Card, Progress } from "antd";
+import { Card, Progress, Space } from "antd";
 const macros = [
     {
         name:"Protein",
@@ -44,9 +44,13 @@ const macroProgress = macros.map(macro => {
 const Macronutrients = () =>{
     return(
         <Card title="Macronutrients">
-            <div style={{ width: '70%' }}>
-                {macroProgress}
+        {/* <Space direction="vertical"> */}
+            <div style={{ width: '100%' }}>
+                
+                    {macroProgress}
+                
             </div>
+            {/* </Space> */}
         </Card>
     )
 }

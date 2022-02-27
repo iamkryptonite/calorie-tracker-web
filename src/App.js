@@ -1,13 +1,13 @@
 import './App.css';
-import 'antd/dist/antd.css'; // or 'antd/dist/antd.less's
+import 'antd/dist/antd.less'
 import { Layout, Menu} from 'antd';
 import {
   DesktopOutlined,
   PieChartOutlined,
   FileOutlined,
 } from '@ant-design/icons';
-import Dashboard from './components/pages/Dashboard';
 import PageRouter from './components/PageRouter';
+import { Link } from 'react-router-dom';
 
 const { Content, Sider } = Layout;
 
@@ -26,6 +26,7 @@ function App() {
       >
         <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
           <Menu.Item key="1" icon={<PieChartOutlined />}>
+            {/* <Link to="/">Dashboard</Link> */}
             Dashboard
           </Menu.Item>
           <Menu.Item key="2" icon={<DesktopOutlined />}>
@@ -39,7 +40,6 @@ function App() {
       <Layout className="site-layout" style={{ marginLeft: 200 }}>
         <Content style={{ margin: '32px 32px',justifyContent:'center',alignContent:'center',alignItems:'center' }}>
           <div className="site-layout-background" style={{ padding: 24, minHeight: 360, maxWidth:1000,justifyContent:'center',alignContent:'center',alignItems:'center' }}>
-            {/* <Dashboard/> */}
             <PageRouter/>
           </div>
         </Content>

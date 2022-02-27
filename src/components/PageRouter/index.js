@@ -3,16 +3,16 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Link,
 } from "react-router-dom";
 import Dashboard from "../pages/Dashboard";
+import FoodTracker from "../pages/FoodTracker";
 
 export default function PageRouter() {
     return (
       <Router>
         <Routes>
           <Route exact path="/" element={<Dashboard/>}/>
-          <Route exact path="/check" element={<Dashboard/>}/>
+          <Route path="/track" element={<FoodTracker/>}/>
         </Routes>
       </Router>
     );

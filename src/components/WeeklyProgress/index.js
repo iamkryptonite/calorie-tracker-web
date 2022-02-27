@@ -43,8 +43,8 @@ ChartJS.register(
       {
         label: 'Dataset 1',
         data: [12, 13, 14, 23,10,40,30],
-        borderColor: '#1890FF',
-        backgroundColor: '#1890FF',
+        borderColor: '#B4CFB0',
+        backgroundColor: '#B4CFB0',
         fill: 'start'
       },
     ],

@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import {Row,Col,Card } from 'antd';
+import {Row,Col} from 'antd';
 import CalorieTracker from '../../CalorieTrack';
 import Macronutrients from '../../Macronutrients';
 import WeeklyProgress from '../../WeeklyProgress';
